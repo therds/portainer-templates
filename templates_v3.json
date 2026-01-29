@@ -36,24 +36,6 @@
         }
       ],
       "maintainer": "http://github.com/therds"
-    },
-    {
-      "id": 2,
-      "name": "freshrss-stack",
-      "title": "FreshRSS-stack",
-      "description": "A free, self-hostable rss aggregator stack.",
-      "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/freshrss-icon.png",
-      "image": "linuxserver/freshrss:latest",
-      "platform": "linux",
-      "type": 3,
-      "categories": [
-        "Smarthome"
-      ],
-      "repository": {
-        "stackfile": "stack/freshrss-compose.yml",
-        "url": "https://github.com/therds"
-      },
-      "maintainer": "https://github.com/therds"
     }
 
   ]
