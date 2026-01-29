@@ -67,11 +67,11 @@
         },
         {
           "default": "/share/portainer/freshrss"
-          "label": "CONFIG",
-          "name": "CONFIG"
+          "label": "DATA",
+          "name": "DATA"
         },
         {
-          "default": "Asia/Bangkok"
+          "default": "Asia/Bangkok",
           "label": "TZ",
           "name": "TZ"
         }
