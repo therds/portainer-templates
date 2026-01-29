@@ -49,38 +49,11 @@
       "categories": [
         "Smarthome"
       ],
-      "env": [
-        {
-          "default": "1000",
-          "label": "PUID",
-          "name": "PUID"
-        },
-        {
-          "default": "1000",
-          "label": "PGID",
-          "name": "PGID"
-        },
-        {
-          "default": "80",
-          "label": "PORT",
-          "name": "PORT"
-        },
-        {
-          "default": "/share/portainer/freshrss",
-          "label": "DATA",
-          "name": "DATA"
-        },
-        {
-          "default": "Asia/Bangkok",
-          "label": "TZ",
-          "name": "TZ"
-        }
-      ],
       "repository": {
         "stackfile": "stack/freshrss-compose.yml",
-        "url": "http://github.com/therds"
+        "url": "https://github.com/therds"
       },
-      "maintainer": "http://github.com/therds"
+      "maintainer": "https://github.com/therds"
     }
 
   ]
