@@ -1,0 +1,87 @@
+{
+  "version": "3",
+  "templates": [
+    {
+      "id": 1,
+      "name": "freshrss",
+      "title": "FreshRSS",
+      "description": "A free, self-hostable rss aggregator.",
+      "type": 1,
+      "categories": [
+        "Smarthome"
+      ],
+      "platform": "linux",
+      "image": "linuxserver/freshrss:latest",
+      "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/freshrss-icon.png",
+      "env": [
+        {
+          "default": "1000",
+          "label": "PUID",
+          "name": "PUID"
+        },
+        {
+          "default": "1000",
+          "label": "PGID",
+          "name": "PGID"
+        }
+      ],
+      "ports": [
+        "80/tcp"
+      ],
+      "restart_policy": "unless-stopped",
+      "volumes": [
+        {
+          "bind": "/share/portainer/freshrss",
+          "container": "/config"
+        }
+      ],
+      "maintainer": "http://github.com/therds"
+    },
+    {
+      "id": 2,
+      "name": "freshrss-stack",
+      "title": "FreshRSS-stack",
+      "description": "A free, self-hostable rss aggregator stack.",
+      "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/freshrss-icon.png",
+      "image": "linuxserver/freshrss:latest",
+      "platform": "linux",
+      "type": 3,
+      "categories": [
+        "Smarthome"
+      ],
+      "env": [
+        {
+          "default": "1000",
+          "label": "PUID",
+          "name": "PUID"
+        },
+        {
+          "default": "1000",
+          "label": "PGID",
+          "name": "PGID"
+        },
+        {
+          "default": "80",
+          "label": "PORT",
+          "name": "PORT"
+        },
+        {
+          "default": "/share/portainer/freshrss"
+          "label": "CONFIG",
+          "name": "CONFIG"
+        },
+        {
+          "default": "Asia/Bangkok"
+          "label": "TZ",
+          "name": "TZ"
+        }
+      ],
+      "repository": {
+        "stackfile": "stack/freshrss-compose.yml",
+        "url": "http://github.com/therds"
+      },
+      "maintainer": "http://github.com/therds"
+    }
+
+  ]
+}
