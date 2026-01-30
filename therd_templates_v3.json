@@ -61,6 +61,11 @@
           "name": "PGID"
         },
         {
+          "default": "freshrss",
+          "label": "HOSTS",
+          "name": "HOSTS"
+        },
+        {
           "default": "80",
           "label": "PORT",
           "name": "PORT"
