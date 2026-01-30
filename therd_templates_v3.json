@@ -5,7 +5,7 @@
       "id": 1,
       "name": "freshrss",
       "title": "FreshRSS",
-      "description": "A free, self-hostable rss aggregator.",
+      "description": "A free, self-hostable rss aggregator. (image:linuxserver.io)",
       "type": 1,
       "categories": [
         "Smarthome"
@@ -41,7 +41,7 @@
       "id": 2,
       "name": "freshrss-stack",
       "title": "FreshRSS-stack",
-      "description": "A free, self-hostable rss aggregator.",
+      "description": "A free, self-hostable rss aggregator. (image:linuxserver.io)",
       "logo": "https://raw.githubusercontent.com/therds/portainer-templates/refs/heads/main/stack/freshrss-logo.png",
       "image": "linuxserver/freshrss:latest",
       "platform": "linux",
