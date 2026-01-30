@@ -7,6 +7,9 @@ services:
       - PGID=${PGID}
       - TZ=${TZ}
       - DATA=${DATA}
+      - PORT=${PORT}
+      - HOSTS=${HOSTS:-freshrss}
+    hosts: ${HOSTS}
     volumes:
       - ${DATA}:/config
     ports:
