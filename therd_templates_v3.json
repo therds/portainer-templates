@@ -62,18 +62,18 @@
         },
         {
           "default": "freshrss",
-          "label": "HOSTS",
-          "name": "HOSTS"
+          "label": "HOSTNAME",
+          "name": "HOSTNAME"
         },
         {
-          "default": "80",
+          "default": "4080",
           "label": "PORT",
           "name": "PORT"
         },
         {
           "default": "/share/portainer/freshrss", 
-          "label": "CONFIG",
-          "name": "CONFIG"
+          "label": "DATA",
+          "name": "DATA"
         },
         {
           "default": "Asia/Bangkok", 
