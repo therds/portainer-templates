@@ -1,17 +1,15 @@
+# check $ docker compose -f stack-freshrss.yaml config
 services:
   freshrss:
     image: lscr.io/linuxserver/freshrss:latest
     container_name: freshrss
     environment:
-      - PUID=${PUID}
-      - PGID=${PGID}
-      - TZ=${TZ}
-      - DATA=${DATA}
-      - PORT=${PORT}
-      - HOSTS=${HOSTS:-freshrss}
-    hosts: ${HOSTS}
+      - PUID=${PUID:-1000}
+      - PGID=${PGID:-1000}
+      - TZ=${TZ:-Asia/Bangkok}
+    hostname: ${HOSTNAME:-freshrss}
     volumes:
-      - ${DATA}:/config
+      - ${DATA:-/share/portainer/freshrss}:/config
     ports:
-      - ${PORT}:80
+      - ${PORT:-4080}:80
     restart: unless-stopped
