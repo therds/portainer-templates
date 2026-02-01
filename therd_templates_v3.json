@@ -86,6 +86,51 @@
         "url": "https://github.com/therds/portainer-templates"
       },
       "maintainer": "https://github.com/therds/portainer-templates"
+    },
+    {
+      "id": 3,
+      "name": "filebrowser-stack",
+      "title": "FileBrowser-stack",
+      "description": "File Browser provides a file managing interface(image:linuxserver.io)",
+      "logo": "https://raw.githubusercontent.com/therds/portainer-templates/refs/heads/main/stack/filebrowser-logo.png",
+      "image": "filebrowser/filebrowser:latest",
+      "platform": "linux",
+      "type": 3,
+      "categories": [
+        "Smarthome"
+      ],
+      "env": [
+        {
+          "default": "1000",
+          "label": "PUID",
+          "name": "PUID"
+        },
+        {
+          "default": "1000",
+          "label": "PGID",
+          "name": "PGID"
+        },
+        {
+          "default": "5080",
+          "label": "PORT",
+          "name": "PORT"
+        },
+        {
+          "default": "/share/portainer/freshrss/share", 
+          "label": "DATA",
+          "name": "DATA"
+        },
+        {
+          "default": "Asia/Bangkok", 
+          "label": "TZ",
+          "name": "TZ"
+        }
+      ],
+      "repository": {
+        "stackfile": "stack/filebrowser-compose.yml",
+        "url": "https://github.com/therds/filebrowser-templates"
+      },
+      "maintainer": "https://github.com/therds/portainer-templates"
     }
 
   ]
